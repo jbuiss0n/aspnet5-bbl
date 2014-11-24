@@ -19,7 +19,7 @@ namespace BBL.Api
             app.Use((context, next) =>
             {
                 context.Response.WriteAsync("404 not found !");
-                return next();
+                return null;
             });
         }
     }
